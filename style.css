@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Lightred: hsla(0, 100%, 67%, 0.147);
+    --OrangeyYellow: hsla(39, 100%, 56%, 0.147);
+    --GreenTeal: hsl(166, 100%, 37%, 0.147);
+    --CobaltBlue: hsl(234, 85%, 45%, 0.147);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.main {
+    width: 650px;
+    display: flex;
+    border-radius: 30px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 10px 10px 10px hsla(224, 30%, 27%, 0.09);
+}
+.heading {
+    color: var(--Paleblue);
+    font-size: 150%;
+}
+.first-section {
+    background: linear-gradient(var(--Lightslateblue),var(--LightRoyalBlue));
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.first-section .great {
+    font-size: 200%;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.k {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(var(--VioletBlue),var(--PersianBlue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 0;
+    gap: 0;
+}
+.k .br{
+    font-size: 350%;
+    color: var(--White);
+}
+.k .of {
+    color: var(--Lightlavender);
+}
+.first-section h2 {
+    color: white;
+    font-size: 250%;
+    text-transform:capitalize;
+}
+.first-section p {
+    color: var(--Paleblue);
+    font-size: 18px;
+}
+.second-section {
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.second-section button {
+    color: var(--White);
+    background-color:var(--Darkgrayblue);
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 150px;
+}
+.second-section ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.second-section .heading1 {
+    color: var(--Darkgrayblue);
+    font-size: 120%;
+    font-weight: 900;
+}
+.second-section ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    padding:0 5px;
+    border-radius: 5px;
+    background-color: var(--Lightred);
+    height: 50px;
+    align-items: center;
+}
+.second-section ul li h3 {
+    color: hsl(0, 100%, 67%);
+}
+.second-section ul li div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.second-section ul li.memory{
+    background-color: var(--OrangeyYellow);
+}
+.second-section ul li.memory h3 {
+    color: hsl(39, 100%, 56%)
+}
+.second-section ul li.verbal{
+    background-color: var(--GreenTeal);
+}
+.second-section ul li.verbal h3 {
+    color: hsl(166, 100%, 37%)
+}
+.second-section ul li.visual{
+    background-color: var(--CobaltBlue);
+}.second-section ul li.visual h3 {
+    color: hsl(234, 85%, 45%);
+}
+
+@media screen and (max-width:700px) {
+    .main {
+        height: 100vh;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main .first-section {
+        width: 90%;
+        padding: 5%;
+        height: 50vh;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+    }
+    .main .second-section {
+        width: 90%;
+        height: 50vh;
+        padding: 5%;
+    }
+}
